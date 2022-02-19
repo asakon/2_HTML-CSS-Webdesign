@@ -197,7 +197,107 @@ header .wrapper {
     padding-bottom: 1rem;
 }
 
+#speakers {
+    padding: 4rem 1rem;
+}
+
+.speakers-list {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+}
+
+.speakers-text {
+    margin-left: 1rem;
+}
+
+#speakers h2 {
+    background: linear-gradient(var(--light-blue), var(--blue));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+}
+
+#speakers h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+#speakers img {
+    border-radius: 50%;
+    width: 20%;
+}
+
+#ticket {
+    background: linear-gradient(var(--pink), var(--purple));
+    padding: 6rem 1rem 2rem;
+    -webkit-clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
+}
+
+#ticket h2 {
+    color: var(--white);
+}
+
+.ticket-form {
+    max-width: 480px;
+    margin: 0 auto 5rem;
+}
+
+.ticket-form label {
+    color: var(--white);
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.ticket-field {
+    background: rgba(255, 255, 255, 0.5);
+    padding: 1rem;
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+.ticket-btn {
+    background: var(--grey);
+    color: var(--white);
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+.footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    padding-top: 2rem;
+    text-align: center;
+    font-size: 0.875rem;
+    color: var(--white);
+}
+
+.footer a {
+    text-decoration: underlinse;
+}
+
 @media (min-width: 600px) {
+    h2 {
+        font-size: 5rem;
+    }
+    
+    a:hover,
+    .ticket-btn:hover {
+        transition: 0.3s;
+    }
+
+    a:hover {
+        color: var(--blue);
+    }
+
+    .ticket-btn:hover {
+        background: var(--blue);
+    }
+
     .btn-menu {
         display: none;
     }
@@ -210,5 +310,37 @@ header .wrapper {
 
     .main-nav li {
         margin: 0 0 0 1.5rem;
+    }
+
+    #hero h1 {
+        font-size: 6.875rem;
+    }
+
+    .hero-date {
+        font-size: 3rem;
+    }
+
+    .news-table td {
+        display: table-cell;
+    }
+
+    .news-data {
+        padding: 1.125rem 0 1rem 1rem;
+    }
+
+    .news-content {
+        padding: 1rem 1rem 1rem 0;
+    }
+
+    #speakers h2 {
+        margin-bottom: 4rem;
+    }
+
+    .speakers-list {
+        margin-bottom: 3rem;
+    }
+
+    .speakers-text {
+        margin-left: 2rem;
     }
 }
